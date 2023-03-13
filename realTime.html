@@ -63,63 +63,65 @@
         </div>
 
         
-
-        <!-- descriptions -->
         <div>
-            <div style="display: inline-block; width: 605px; padding-left: 190px;">
-                <i>The real-time viewport is above this text</i>
+            <!-- descriptions -->
+            <div>
+                <div style="display: inline-block; width: 605px; padding-left: 190px;">
+                    <i>The real-time viewport is above this text</i>
+                </div>
+
+                <div style="display: inline-block;">
+                    <i>Full resolution ray traced image from default camera position</i>
+                </div>
+            </div>
+
+            <!-- controls -->
+            <div style="display: inline-block; background:rgb(43, 43, 43); margin:10px; padding: 10px; border-radius: 15px">
+                <h1>Controls</h1>
+                <p>Shift-Left click and move mouse—> Moves the camera view</p>
+                <p>Left click —> Rotates the camera around the object</p>
+                <p>Scroll wheel movement —> Zooms the view in or out</p>
+                <p>Space bar —> Render the current scene and display on the view frustum</p>
+                <p>a —> toggle the view between all or a single light ray from the view frustum/p>
+                <p>Arrow keys —> moves the selected pixel on the view frustum in the display window</p>
+                <p>t --> repositions view frustum to current cammera position and render middle window</p>
+                <p>r —> realigns the real-time view camera position</p>
+                <p>+ —> increases the resolution of the frustum</p>
+                <p>- --> decrease the resolution of the frustum</p>
+                <p>v --> display all rays in the vertical coloumn of the selected tile</p>
+                <p>h --> display all rays in the row of the selected tile</p>
             </div>
 
             <div style="display: inline-block;">
-                <i>Full resolution ray traced image from default camera position</i>
-            </div>
-        </div>
-    
-        <!-- controls -->
-        <div style="display: inline-block; background:rgb(43, 43, 43); margin:10px; padding: 10px; border-radius: 15px">
-            <h1>Controls</h1>
-            <p>Shift-Left click and move mouse—> Moves the camera view</p>
-            <p>Left click —> Rotates the camera around the object</p>
-            <p>Scroll wheel movement —> Zooms the view in or out</p>
-            <p>Space bar —> Render the current scene and display on the view frustum</p>
-            <p>a —> toggle the view between all or a single light ray from the view frustum/p>
-            <p>Arrow keys —> moves the selected pixel on the view frustum in the display window</p>
-            <p>r —> realigns the real-time view camera position</p>
-            <p>+ —> increases the resolution of the frustum</p>
-            <p>- --> decrease the resolution of the frustum</p>
-            <p>v --> display all rays in the vertical coloumn of the selected tile</p>
-            <p>h --> display all rays in the row of the selected tile</p>
-        </div>
+                <div style="background:rgb(43, 43, 43); margin:10px; padding: 10px; border-radius: 10px;"">
+                    <h1 style="margin-block-end: 0em;">Number Keys</h1>
+                    <p style="margin-block-start: 0em;">
+                    1 - Scene 1 = 3 spheres with no shadowing<br>
+                    2 - Scene 2 = 3 spheres with shadowing from other spheres<br>
+                    3 - Scene 3 = spheres and planes, multiple lights<br>
+                    4 - Scene 4 = mirror balls with a single light bounce<br>
+                    5 - Scene 5 = mirror bounce with multiple bounces<br>
+                    6 - Scene 6 = Bunny zoomed out (quick render) <br>
+                    7 - Scene 7 = Bunny zoomed in (longer time to render)<br>
+                    8 - Scene 8 = Cornell Box with heavy Refraction<br>
+                    9 - Scene 9 = Robot<br>
+                    0 - Scene 0 = Cornell Box</p>
+                </div>
 
-        <div style="display: inline-block;">
-            <div style="background:rgb(43, 43, 43); margin:10px; padding: 10px; border-radius: 10px;"">
-                <h1 style="margin-block-end: 0em;">Number Keys</h1>
-                <p style="margin-block-start: 0em;">
-                1 - Scene 1 = 3 spheres with no shadowing<br>
-                2 - Scene 2 = 3 spheres with shadowing from other spheres<br>
-                3 - Scene 3 = spheres and planes, multiple lights<br>
-                4 - Scene 4 = mirror balls with a single light bounce<br>
-                5 - Scene 5 = mirror bounce with multiple bounces<br>
-                6 - Scene 6 = Bunny zoomed out (quick render) <br>
-                7 - Scene 7 = Bunny zoomed in (longer time to render)<br>
-                8 - Scene 8 = Cornell Box with heavy Refraction<br>
-                9 - Scene 9 = Robot<br>
-                0 - Scene 0 = Cornell Box</p>
+                <div style="background:rgb(249, 200, 8); color: black; margin-top:10px; margin-left: 10px; padding-left: 10px; padding-bottom: 10px; border-radius: 15px">
+                    <h1>Warning</h1>
+                    <p>Increasing the resolution of the frustum, with + key,<br>
+                       will decrease the performance of the real-time view, <br>
+                       so please be patient. You can expect very slow <br>
+                       performance once you pass 80x80 resolution.</p>
+                </div>
             </div>
 
-            <div style="background:rgb(249, 200, 8); color: black; margin-top:10px; margin-left: 10px; padding-left: 10px; padding-bottom: 10px; border-radius: 15px">
-                <h1>Warning</h1>
-                <p>Increasing the resolution of the frustum, with + key,<br>
-                   will decrease the performance of the real-time view, <br>
-                   so please be patient. You can expect very slow <br>
-                   performance once you pass 80x80 resolution.</p>
+            <!-- VIDEO -->
+            <div style="display: inline-block;">
+                <iframe width="801" height="450" src="https://www.youtube.com/embed/NfRdSH06bG0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-        </div>
-
-        <!-- VIDEO -->
-        <div style="display: inline-block;">
-            <iframe width="801" height="450" src="https://www.youtube.com/embed/NfRdSH06bG0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
+        <div>
 
         <a href="index.html">
             <button class="btn warning">Bigger Render</button>

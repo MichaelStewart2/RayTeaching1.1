@@ -63,19 +63,22 @@
             </div>
         </div>
 
-        
         <div>
             <!-- descriptions -->
             <div>
-                <div style="display: inline-block; width: 605px; padding-left: 190px;">
-                    <i>The real-time viewport is above this text</i>
+                <div style="display: inline-block; width: 650px; text-align: center;">
+                    <i>Real-time Viewport</i>
                 </div>
 
-                <div style="display: inline-block;">
+                <div style="display: inline-block; width: 650px; text-align: center;">
+                    <i>Ray Traced Image from Camera's Position</i>
+                </div>
+
+                <div style="display: inline-block; width: 650px; text-align: center;">
                     <i>Full resolution ray traced image from default camera position</i>
                 </div>
             </div>
-
+        
             <!-- controls -->
             <div style="display: inline-block; background:rgb(43, 43, 43); margin:10px; padding: 10px; border-radius: 15px">
                 <h1>Controls</h1>
@@ -85,7 +88,6 @@
                 <p>Space bar —> Render the current scene and display on the view frustum</p>
                 <p>a —> toggle the view between all or a single light ray from the view frustum/p>
                 <p>Arrow keys —> moves the selected pixel on the view frustum in the display window</p>
-                <p>t --> repositions view frustum to current cammera position and render middle window</p>
                 <p>r —> realigns the real-time view camera position</p>
                 <p>+ —> increases the resolution of the frustum</p>
                 <p>- --> decrease the resolution of the frustum</p>
@@ -108,21 +110,13 @@
                     9 - Scene 9 = Robot<br>
                     0 - Scene 0 = Cornell Box</p>
                 </div>
-
-                <div style="background:rgb(249, 200, 8); color: black; margin-top:10px; margin-left: 10px; padding-left: 10px; padding-bottom: 10px; border-radius: 15px">
-                    <h1>Warning</h1>
-                    <p>Increasing the resolution of the frustum, with + key,<br>
-                       will decrease the performance of the real-time view, <br>
-                       so please be patient. You can expect very slow <br>
-                       performance once you pass 80x80 resolution.</p>
-                </div>
             </div>
 
             <!-- VIDEO -->
             <div style="display: inline-block;">
                 <iframe width="801" height="450" src="https://www.youtube.com/embed/NfRdSH06bG0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-        <div>
+        </div>
 
         <a href="realTime.html">
             <button class="btn warning">Real Time Renderer</button>
@@ -134,9 +128,9 @@
         <script src="gl-matrix.js"></script>
         <script src="combinedObfuscated.js"></script>
 
-        <!-- <script src="MatrixStack.js"></script> -->
-        <!-- <script src="util.js"></script> -->
-        <!-- <script src="camera.js"></script>
+        <!-- <script src="MatrixStack.js"></script>
+        <script src="util.js"></script>
+        <script src="camera.js"></script>
         <script src="program.js"></script>
         <script src="light.js"></script>
         <script src="material.js"></script>
@@ -149,6 +143,6 @@
         <script src="scene.js"></script> -->
         <!-- <script src="index.js"></script> -->
          
-        <!-- <script src="app.js"></script> -->
+        <script src="app.js"></script>
     </body>
 </html>
